@@ -1,0 +1,37 @@
+﻿// JavaScript Document
+/**
+ * @copyright (C)2011 Cenwor Inc.
+ * @author hklsijun
+ * @package js
+ * @name sum.random.more.js
+ * @date 2016-11-23 17:15:08
+ */
+
+
+function rand_0_no(no) {
+	var str = '';
+	str = Math.round(Math.random()*no);
+	return str;
+}
+
+function random_add(num) {
+
+	setInterval(function() { 
+		//显示的长度 
+	    var len = 5;
+
+	    num = parseInt(num) + rand_0_no(3); 
+
+	    num = num.toString(); 
+
+	    // while(num.length < len) { 
+
+	    //     num = '0' + num; 
+
+    	// } 
+
+    document.getElementById('sumcount').innerHTML = num + "人已购买"; 
+
+	}, 1000) 
+
+}
